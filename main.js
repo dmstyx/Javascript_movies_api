@@ -11,6 +11,7 @@ btn.onclick = function(){
   if(searchItem.value !== '') {
       const search = searchItem.value;
       url = baseURL + search;
+      thumbBar.innerHTML = "";
       fetchUsers(url);
     }
   }
